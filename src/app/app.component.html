@@ -1,3 +1,7 @@
 <div class="test">
   <p>This is app component</p>
+  <h1>Hello {{name}}</h1>
+  <input type="text" [value] = "name">
+  <p *ngIf="Age > 40">You're old</p>
+  <p *ngIf="Age <= 40">You're young</p>
 </div>
