@@ -1,0 +1,10 @@
+.soam {
+  color: red;
+}
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  @extend table;
+}

@@ -6,4 +6,19 @@
   <ng-template #tre><h2>Tre</h2></ng-template>
   <ng-template #gia><h2>Gia</h2></ng-template>
   <button (click)="resetName()"></button>
+  <h1>Trai cay</h1>
+  <table>
+      <tr>
+          <th>Thu tu</th>
+          <th>Ten</th>
+          <th>Gia</th>
+          <th>Dai ha gia</th>
+      </tr>
+      <tr *ngFor="let trai of traicay1; let i = index">
+          <td>{{i}}</td>
+          <td>{{trai.ten}}</td>
+          <td><span [ngClass]="{ 'soam': trai.gia < 0}">{{trai.gia}}</span></td>
+          <td *ngIf="trai.daihagia">Dai ha gia</td>
+      </tr>
+    </table>
 </div>

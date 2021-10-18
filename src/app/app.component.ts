@@ -11,6 +11,7 @@ export class AppComponent {
   name = "Loc";
   Age = 15;
   traicay = ["Nho", "Xoai", "Tao"];
+  traicay1 = [{ten:"Nho", gia:12, daihagia:false},{ten:"Xoai", gia:3, daihagia:true},{ten:"Tao", gia:-123, daihagia:false}]
   resetName(): void {
     this.name = "";
   }
