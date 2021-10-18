@@ -18,7 +18,7 @@
           <td>{{i}}</td>
           <td>{{trai.ten}}</td>
           <td><span [ngClass]="{ 'soam': trai.gia < 0}">{{trai.gia}}</span></td>
-          <td *ngIf="trai.daihagia">Dai ha gia</td>
+          <td >{{trai.daihagia | onsale | uppercase}}</td>
       </tr>
     </table>
 </div>
