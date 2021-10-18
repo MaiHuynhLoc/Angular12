@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   name = "Loc";
-  Age = 20;
+  Age = 15;
+  traicay = ["Nho", "Xoai", "Tao"];
   resetName(): void {
     this.name = "";
   }
