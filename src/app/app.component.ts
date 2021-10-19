@@ -15,4 +15,8 @@ export class AppComponent {
   resetName(): void {
     this.name = "";
   }
+  cities = [{city: "An Giang", district: []}];
+  ngOnInit() : void {
+    console.log(this.cities);
+  }
 }

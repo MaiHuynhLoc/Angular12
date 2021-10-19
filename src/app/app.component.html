@@ -1,24 +1,10 @@
-<div class="test">
-  <p>This is app component</p>
-  <h1>Hello {{name}}</h1>
-  <input type="text" [(ngModel)] = "name">
-  <div *ngIf="Age <= 18 then tre else gia"></div>
-  <ng-template #tre><h2>Tre</h2></ng-template>
-  <ng-template #gia><h2>Gia</h2></ng-template>
-  <button (click)="resetName()"></button>
-  <h1>Trai cay</h1>
-  <table>
-      <tr>
-          <th>Thu tu</th>
-          <th>Ten</th>
-          <th>Gia</th>
-          <th>Dai ha gia</th>
-      </tr>
-      <tr *ngFor="let trai of traicay1; let i = index">
-          <td>{{i}}</td>
-          <td>{{trai.ten}}</td>
-          <td><span [ngClass]="{ 'soam': trai.gia < 0}">{{trai.gia}}</span></td>
-          <td >{{trai.daihagia | onsale | uppercase}}</td>
-      </tr>
-    </table>
-</div>
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li><a routerLink="/about" routerLinkActive="active">About Component</a></li>
+    <li><a routerLink="/home" routerLinkActive="active">Home Component</a></li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
