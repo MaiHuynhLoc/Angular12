@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../Services/common.service';
 
 @Component({
   selector: 'app-about',
@@ -8,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   loginname = "sda"
-  constructor() { }
+  public counter = 2;
+  public counterBinhPhuong = 0;
+  constructor(private common:CommonService) { }
 
   ngOnInit(): void {
-
+    this.counterBinhPhuong = this.common.binhPhuong(this.counter);
   }
 
 }
