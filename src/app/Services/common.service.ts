@@ -9,4 +9,8 @@ export class CommonService {
     if (n !== 0) return n*n;
     return n;
   }
+  submitData(data:any):void {
+    console.log("Send data to server ",data);
+
+  }
 }

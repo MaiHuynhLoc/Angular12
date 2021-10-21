@@ -7,6 +7,12 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { OnsalePipe } from './onsale.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { GetdataComponent } from './getdata/getdata.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -16,12 +22,16 @@ import { HighlightDirective } from './directives/highlight.directive';
     HomeComponent,
     OnsalePipe,
     HighlightDirective,
+    TemplateDrivenFormComponent,
+    ReactiveFormComponent,
+    GetdataComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
